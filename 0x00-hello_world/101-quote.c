@@ -3,7 +3,7 @@
 /*
  * main-Entry point
  *
- * Desciption:'and that piece of art is useful" -Dora Korpar, 2015-10-19'
+ * Description:'and that piece of art is useful" -Dora Korpar, 2015-10-19'
  *
  *return: Always 1
 */
