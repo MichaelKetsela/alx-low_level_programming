@@ -2,7 +2,7 @@
 /**
  * main - entry point
  *
- * Discrbion: 'print upper case'
+ * Description: 'print upper case'
  *
  * Return: always 0
  */
