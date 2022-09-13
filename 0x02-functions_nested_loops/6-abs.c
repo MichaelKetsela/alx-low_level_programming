@@ -10,7 +10,7 @@ int _abs(int r)
 {
 if (r < 0)
 {
-r*=(-1);
+r = r * (-1);
 printf("%d\n", r);
 }
 else
