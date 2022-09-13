@@ -2,9 +2,7 @@
 
 /**
 * times_table - prints the 9 times table, starting with 0
-* @x:factor
-* @y: count
-* @z:computed
+*
 * Return: Always 0
 */
 void times_table(void)
@@ -13,10 +11,10 @@ void times_table(void)
 	int y; /* count  */
 	int z; /* computed value */
 
-	while (x <= 9)
+	while (x < 10)
 	{
 		y = 0;
-		while (y <= 9)
+		while (y < 10)
 		{
 			z = x * y;
 
@@ -43,5 +41,6 @@ void times_table(void)
 			y++;
 		}
 		_putchar('\n');
+		x++;
 	}
 }
