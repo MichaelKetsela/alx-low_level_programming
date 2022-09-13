@@ -2,7 +2,7 @@
 
 /**
  * _islower- print 1 if lower otherwise 0
- * c is the charactor
+ * c: is the charactor
  * Return: Always 0.
  */
 int _islower(int c)
