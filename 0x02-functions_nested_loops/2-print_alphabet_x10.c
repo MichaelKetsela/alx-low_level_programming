@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print alphabet 10 times
+ * print_alphabet_x10-print it 10 times
  *
  * Return: Always 0.
  */
@@ -12,7 +12,7 @@ for (i = 1 ; i <= 10 ; i++)
 {
 char a;
 
-for ( a = 'a' ; a <= 'z' ; a++ )
+for (a = 'a' ; a <= 'z' ; a++)
 {
 _putchar(a);
 }
