@@ -10,12 +10,10 @@ int _abs(int r)
 {
 if (r < 0)
 {
-r = r * (-1);
-printf("%d\n", r);
+return (r * -1);
 }
 else
 {
-printf("%d\n", r);
+return (r);
 }
-return (0);
 }
