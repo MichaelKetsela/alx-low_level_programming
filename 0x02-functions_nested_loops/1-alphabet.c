@@ -1,12 +1,16 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main-Entr
- * Description:'print the last digit'
- * Return:Always 0
+ * main - check the code
+ *
+ * Return: Always 0.
  */
-
-int main <void>
+int print_alphabet(void)
 {
-
+  char a;
+  for(a='a' ;a<='z'; a++)
+  {
+  _putchar(a)
+  }
+    return (0);
 }
