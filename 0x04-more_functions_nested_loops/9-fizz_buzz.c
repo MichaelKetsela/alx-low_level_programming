@@ -7,7 +7,7 @@
 * For numbers which are multiples of both three and five print FizzBuzz
 * Return: always 0;
 */
- void fizz_buzz(int)
+ int main(void)
  {
  int i;
  for(i = 1; i <= 100 ; i++)
@@ -29,4 +29,6 @@
  printf("%d ", i);
  }
  }
+ printf('\n');
+ return (0);
  }
