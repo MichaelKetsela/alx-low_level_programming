@@ -9,7 +9,7 @@
 * Return: Always 0.
 */
 
-Prototype: void print_number(int n)
+void print_number(int n)
 {
 	unsigned int num = n;
 
