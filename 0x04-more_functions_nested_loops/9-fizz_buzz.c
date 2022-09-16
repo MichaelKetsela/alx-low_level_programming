@@ -7,7 +7,7 @@
 * For numbers which are multiples of both three and five print FizzBuzz
 * Return: always 0;
 */
- int FizzBuzz(void)
+ int main(void)
  {
  int i;
  for(i = 1; i <= 100 ; i++)
