@@ -3,7 +3,8 @@
 /**
 * print_array - prints n elements of an array of integers
 * followed by a new line
-*
+* @a: is an array
+* @n: ize of an array
 * Return: Always 0.
 */
 void print_array(int *a, int n)
