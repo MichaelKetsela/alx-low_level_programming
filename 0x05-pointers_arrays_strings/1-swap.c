@@ -14,5 +14,5 @@ int c;
 c = *a;
 *a = *b;
 *b = c;
-swap_int(*a , *b);
+swap_int(int *a , int *b);
 }
