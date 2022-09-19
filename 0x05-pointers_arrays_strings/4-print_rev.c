@@ -7,13 +7,12 @@
 */
 void print_rev(char *s)
 {
-char s[];
 int l = strlen(s);
 /*strlen calculates the length of a given string*/
 int i = l - 1;
 while (i >= 0)
 {
-printf("%s ", s[i]);
+printf("%d ", s[i]);
 i--;
 }
 }
