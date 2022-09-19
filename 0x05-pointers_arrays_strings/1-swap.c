@@ -14,6 +14,5 @@ void swap_int(int *a, int *b)
     b = 42;
     printf("a=%d, b=%d\n", a, b);
     swap_int(b, a);
-    printf("a=%d, b=%d\n", a, b);
-    return (0);
+  
 }
