@@ -12,7 +12,7 @@ int l = strlen(s);
 int i = l - 1;
 while (i >= 0)
 {
-printf("%s ", s[i])
+printf("%s ", s[i]);
 i--;
 }
 }
