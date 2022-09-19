@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* main - check the code
+* _strlen - returns the length of a string
 *
 * Return: Always 0.
 */
@@ -12,4 +12,5 @@ while(s[a] != '\0')
 {
 a++;
 }
+return(a);
 }
