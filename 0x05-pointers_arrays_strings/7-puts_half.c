@@ -13,7 +13,7 @@ n = (strlen(str) - 1) / 2;
 len = strlen(str) - 1;
 while (n <= len)
 {
-printf("%c", str[i]);
+printf("%c", str[n]);
 i++;
 }
 printf("\n");
