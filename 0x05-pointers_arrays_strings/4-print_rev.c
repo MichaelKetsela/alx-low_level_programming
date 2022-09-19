@@ -7,6 +7,7 @@
 */
 void print_rev(char *s)
 {
+string s;
 int l = strlen(s);
 /*strlen calculates the length of a given string*/
 int i = l - 1;
