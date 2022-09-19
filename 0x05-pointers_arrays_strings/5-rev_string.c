@@ -13,7 +13,7 @@ int i = l - 1;
 char newstr [];
 while (i >= 0)
 {
-newstr = s[i];
+newstr [] = s[i];
 i--;
 }
 }
