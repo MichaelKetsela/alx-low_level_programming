@@ -14,6 +14,6 @@ while (i >= 0)
 {
 printf("%c", s[i]);
 i--;
+break;
 }
-printf("\n");
 }
