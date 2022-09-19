@@ -5,7 +5,7 @@
 * @s: is the string
 * Return: Always 0.
 */
-void print_rev(char *s)
+void rev_string(char *s);
 {
 int l = strlen(s);
 /*strlen calculates the length of a given string*/
