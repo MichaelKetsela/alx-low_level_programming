@@ -15,4 +15,5 @@ c = *a;
 *a = *b;
 *b = c;
 swap_int(*a , *b);
+break;
 }
