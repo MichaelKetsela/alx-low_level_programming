@@ -5,15 +5,20 @@
 * @s: is the string
 * Return: Always 0.
 */
+
 void rev_string(char *s)
 {
-int l = strlen(s);
-/*strlen calculates the length of a given string*/
-int i = l - 1;
-char newstr[];
-while (i >= 0)
+int i;
+int len;
+char newStr;
+i = 0;
+len = strlen(s) - 1;
+while (len >= i)
 {
-newstr[] = s[i];
-i--;
+newStr = s[len]; 
+s[len] = s[i]; 
+s[i] = newStr;
+len--;
+i++;
 }
 }
