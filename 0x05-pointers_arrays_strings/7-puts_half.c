@@ -14,7 +14,7 @@ n = len / 2;
 while (n <= len)
 {
 printf("%c", str[n]);
-i++;
+n++;
 }
 printf("\n");
 }
