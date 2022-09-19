@@ -15,8 +15,8 @@ i = 0;
 len = strlen(s) - 1;
 while (len >= i)
 {
-newStr = s[len]; 
-s[len] = s[i]; 
+newStr = s[len];
+s[len] = s[i];
 s[i] = newStr;
 len--;
 i++;
