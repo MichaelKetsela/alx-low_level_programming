@@ -7,6 +7,13 @@
 */
 int _atoi(char *s)
 {
+if (s == '+' || s == '-')
+{
+break;
+}
+else
+{
 int a = atoi(s);
 return (a);
+}
 }
