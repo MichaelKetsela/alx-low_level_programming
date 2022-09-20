@@ -7,10 +7,9 @@
 */
 int _atoi(char *s)
 {
-if (s == '+' || s == '-')
+if (s != '+' && s != '-')
 {
-break;
-}
 int a = atoi(s);
 return (a);
+}
 }
