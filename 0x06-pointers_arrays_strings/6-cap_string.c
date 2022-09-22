@@ -14,15 +14,8 @@ int j = strlen(c) - 1;
 int i;
 for (i = 0; i <= j; i++)
 {
-if (c[i] != s[])
-{
 if (c[i] >= 97 && c[i] <= 122)
 c[i] -= 32;
-}
-else 
-{
-c[i] = s[];
-}
 }
 return (c);
 }
