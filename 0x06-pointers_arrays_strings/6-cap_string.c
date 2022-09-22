@@ -7,14 +7,29 @@
 * ;, ., !, ?, ", (, ), {, and }
 * Return: captal word
 */
-char *cap_string(char *c)
+char *cap_string(char *z)
 {
-int j = strlen(c) - 1;
 int i;
-for (i = 0; i <= j; i++)
+int j;
+char s[] = " \n\t,;.!?\"(){}";
+
+if (z[0] >= 'a' && z[0] <= 'z')
+z[0] -= 32;
+
+for (i = 0; z[i] != '\0'; i++)
 {
-if (c[i] >= 97 && c[i] <= 122)
-c[i] -= 32;
+for (j = 0; j < 14; j++)
+{
+if (z[i] != s[j])
+{
+if (z[i + 1] >= 'a' && z[i + 1] <= 'z')
+z[i + 1] -= 32;
 }
-return (c);
+else 
+{
+z[i] = s[j];
+}
+}
+}
+return (z);
 }
