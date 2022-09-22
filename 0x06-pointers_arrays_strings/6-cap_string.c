@@ -2,9 +2,9 @@
 
 /**
 * *cap_string - capitalizes all words of a string
-* @c: string
-* Separators of words: space, tabulation, new line, , , 
-* ;, ., !, ?, ", (, ), {, and }  
+* @z: string
+* Separators of words: space, tabulation, new line, , ,
+* ;, ., !, ?, ", (, ), {, and }
 * Return: captal word
 */
 char *cap_string(char *z)
