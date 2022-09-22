@@ -9,22 +9,19 @@
 */
 char *cap_string(char *c)
 {
-int i ;
-int j;
-int k = strlen(c) -1;
 char s[] = " \n\t,;.!?\"(){}";
-
-if (c[0] >= 'a' && z[0] <= 'z')
-c[0] -= 32;
-for (i = 0; i <= k; i++)
+int j = strlen(c) - 1;
+int i;
+for (i = 0; i <= j; i++)
 {
-for (j = 0; j < 14; j++)
+if (c[i] != s[])
 {
-if (c[i] == s[j])
-{
-if (c[i + 1] >= 'a' && c[i + 1] <= 'z')
-c[i + 1] -= 32;
+if (c[i] >= 97 && c[i] <= 122)
+c[i] -= 32;
 }
+else 
+{
+c[i] = s[];
 }
 }
 return (c);
