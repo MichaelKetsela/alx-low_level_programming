@@ -17,7 +17,8 @@ int sum1 = 0;
 int sum2 = 0;
 for (i = 0; i < size; i++)
 {
-sum1 += a[i];
+sum1 += a[i][i];
+sum2 += a[i][size - i];
 }
-printf("%d, ", sum1);
+printf("%d, %d \n", sum1 , sum2);
 }
