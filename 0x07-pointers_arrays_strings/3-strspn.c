@@ -2,7 +2,7 @@
 /**
  * _strspn - gets the length of a prefix substring
  * The strspn() function returns the length of the initial substring
- * of the string pointed to by str1 that is made up of only those 
+ * of the string pointed to by str1 that is made up of only those
  * character contained in the string pointed to by str2.
  * @s: segment to return bytes from
  * @accept: the bytes to include
