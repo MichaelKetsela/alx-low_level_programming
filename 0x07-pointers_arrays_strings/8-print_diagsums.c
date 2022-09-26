@@ -18,8 +18,11 @@ int sum1 = 0;
 for (i = 0; i < size; i++)
 {
 sum1 += a[i];
-j -= i; 
-sum2 += a[j];
 }
+while (j < (size * size - 1))
+	{
+		sum2 += a[j];
+		j = j + size - 1;
+	}
 printf("%d,%d \n", sum1, sum2);
 }
