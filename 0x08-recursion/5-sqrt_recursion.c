@@ -17,7 +17,7 @@ else if (j * j == i)
 return (j);
 
 else
-return (square(i, j++))
+return (square(i, j++));
 
 return (1);
 }
