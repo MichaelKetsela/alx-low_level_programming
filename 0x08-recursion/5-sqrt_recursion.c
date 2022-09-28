@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * helper - Finds the square root of two numbers
- *
+ * square - Finds the square root of two numbers
+ * _sqrt_recursion - give the square root
  * @n: The number
  * @i: The squared number
  * @j: The square root
