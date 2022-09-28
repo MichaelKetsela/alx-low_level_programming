@@ -2,7 +2,7 @@
 
 /**
  * square - Finds the square root of two numbers
- * 
+ *
  * @i: The squared number
  * @j: The square root
  * Return: square root
