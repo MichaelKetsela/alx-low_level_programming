@@ -14,7 +14,7 @@ int wildcmp(char *s1, char *s2)
 {
 int i = strlen(s1) - 1;
 int j = strlen(s2) - 1;
-if i == j
+if i == j;
 return (cmp(char *a, char *b ,int i));
   
 else
