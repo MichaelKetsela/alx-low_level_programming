@@ -9,9 +9,7 @@
  */
 void _print_rev_recursion(char *s)
 {
-int j = strlen(s);
-int i = 0;
-if (i < j)
+if (*s != '\0')
 {
 _print_rev_recursion(s + 1);
 putchar(*s);
