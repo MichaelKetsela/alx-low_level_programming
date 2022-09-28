@@ -9,11 +9,12 @@
  */
 void _print_rev_recursion(char *s)
 {
-int j = lenstr(s);
+int j = strlen(s);
 int i = 0;
-char rev;
 while (i < j)
 {
-
+_print_rev_recursion(s + 1);
+putchar(*s);
+i++;
 }
 }
