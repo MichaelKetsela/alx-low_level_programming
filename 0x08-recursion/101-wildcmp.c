@@ -2,10 +2,11 @@
 
 int cmp(char *a, char *b ,int i)
 {
+if (a[i] != b[i])
+return (0);
+
 if (i >= 0 && a[i] == b[i])
 return (cmp(a, b , --i));
-else
-return (0);
 
 return (1);
 }
