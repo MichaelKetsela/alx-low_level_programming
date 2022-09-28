@@ -11,10 +11,9 @@ void _print_rev_recursion(char *s)
 {
 int j = strlen(s);
 int i = 0;
-while (i < j)
+if (i < j)
 {
 _print_rev_recursion(s + 1);
 putchar(*s);
-i++;
 }
 }
