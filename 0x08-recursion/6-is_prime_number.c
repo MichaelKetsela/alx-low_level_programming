@@ -31,5 +31,5 @@ int prime(int i, int j)
 
 int is_prime_number(int n)
 {
-	return (primeFinder(n, 2));
+	return (prime(n, 2));
 }
