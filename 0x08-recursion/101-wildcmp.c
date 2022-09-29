@@ -2,13 +2,22 @@
 
 int cmp(char *a, char *b ,int i)
 {
-if (a[i] != b[i])
+int c = 0;
+int j = 0;
+if (a[c] != b[c])
 return (0);
 
-if (i >= 0 && a[i] == b[i])
-return (cmp(a, b , --i));
-
+else if (c < i )
+{
+if (a[c] == b[c])
+c++;
+j++;
+cmp(a, b , i);
+}
+if (c == j)
 return (1);
+
+return (0);
 }
 
 int wildcmp(char *s1, char *s2)
