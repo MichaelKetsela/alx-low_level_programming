@@ -2,14 +2,14 @@
 
 int cmp(char *a, char *b )
 {
-int a = strlen(a);
-int b = strlen(b);
+int l1 = strlen(a);
+int l2 = strlen(b);
 int i = 0;
 int j = 0;
-if (a != b)
+if (l1 != l2)
 return 0;
 
-else if (i < a )
+else if (i < l1)
 {
 if (a[i] == b[i])
 i++;
