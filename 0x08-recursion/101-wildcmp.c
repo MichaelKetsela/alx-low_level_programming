@@ -7,7 +7,7 @@
  */
 int wildcmp(char *s1, char *s2)
 {
-if (!strpbrk(s1, s2))
+if (!strstr(s1, s2))
 return (1);
 else
 return (0);
