@@ -4,10 +4,8 @@ int cmp(char *a, char *b ,int i)
 {
 int c = 0;
 int j = 0;
-if (a[c] != b[c])
-return (0);
 
-else if (c < i )
+if (c < i )
 {
 if (a[c] == b[c])
 c++;
