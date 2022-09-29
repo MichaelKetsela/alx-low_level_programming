@@ -1,18 +1,22 @@
 #include "main.h"
 
-int cmp(char *a, char *b ,int i)
+int cmp(char *a, char *b )
 {
-int c = 0;
+int a = strlen(a);
+int b = strlen(b);
+int i = 0;
 int j = 0;
+if (a != b)
+return 0;
 
-if (c < i )
+else if (i < a )
 {
-if (a[c] == b[c])
-c++;
+if (a[i] == b[i])
+i++;
 j++;
-cmp(a, b , i);
+cmp(a, b);
 }
-if (c == j)
+if (i == j)
 return (1);
 
 return (0);
@@ -20,12 +24,5 @@ return (0);
 
 int wildcmp(char *s1, char *s2)
 {
-int i = strlen(s1) - 1;
-int j = strlen(s2) - 1;
-
-if (i == j)
-return (cmp(s1, s2, i));
-  
-else
-return (0);
+return (cmp(s1, s2));
 }
