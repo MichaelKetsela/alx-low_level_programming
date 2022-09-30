@@ -1,16 +1,14 @@
-#include <unistd.h>
-#include <stdlib.h>
 #include <stdio.h>
-
+#include <stdlib.h>
 
 /**
- * checker - verifies if string has only numbers
+ * numchecker - verifies if string has only numbers
  * @s: string to check
  * Description: return 1 if only numbers in string, 0 if not
- * Return: 1 if only numbers, else 0 
+ * Return: 1 if only numbers, 0 if not
  **/
 
-int checker(char *s)
+int numchecker(char *s)
 {
 	int i;
 
@@ -27,25 +25,30 @@ int checker(char *s)
  * @argc: number of parameters entered
  * @argv: strings entered including file name
  * Description: prints the minimum number of coins to make change
- * Return: 0
+ * Return: zero
  **/
 
 int main(int argc, char *argv[])
 {
 	int change, coins;
-	coins = 0;
-	change = atoi(argv[1]);
+	char *input = argv[1];
+
+	change = coins = 0;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	if (change >= 0 && checker(input) == 0)
+
+	change = atoi(input);
+
+	if (change >= 0 && numchecker(input) == 0)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	if (change < 0 && checker(&input[1]) == 0)
+	if (change < 0 && numchecker(&input[1]) == 0)
 	{
 		printf("Error\n");
 		return (1);
