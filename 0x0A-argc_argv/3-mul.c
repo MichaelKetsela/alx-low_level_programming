@@ -15,7 +15,7 @@ if(argc != 3)
 {
 print("Error\n");
 }
-int m = argc[1] * argc[2];
+int m = argv[1] * argv[2];
 printf("%d\n", m);
 return (0);
 }
