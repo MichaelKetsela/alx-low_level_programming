@@ -1,5 +1,6 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
+
 
 /**
  * checker - verifies if string has only numbers
