@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 	int change = 0;
 	int coins = 0;
 	char *input = argv[1];
-	
+
 	if (argc != 2)
 	{
 		printf("Error\n");
