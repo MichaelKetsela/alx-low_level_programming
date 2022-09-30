@@ -7,8 +7,8 @@
  * @argc: argument counter
  * @argv: argument vector
  *
- * Return: 1 if ERROR such as symbols that are not numbers,
- * 0 if nothing is passed
+ * Return: 1 if ERROR
+ * 0 if no ERROR
  */
 
 int main(int argc, char *argv[])
