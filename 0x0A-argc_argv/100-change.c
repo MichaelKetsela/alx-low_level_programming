@@ -31,15 +31,13 @@ int checker(char *s)
 int main(int argc, char *argv[])
 {
 	int change, coins;
-	change = coins = 0;
+	coins = 0;
+	change = atoi(argv[1]);
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-
-	change = atoi(argv[1]);
-
 	if (change >= 0 && checker(input) == 0)
 	{
 		printf("Error\n");
