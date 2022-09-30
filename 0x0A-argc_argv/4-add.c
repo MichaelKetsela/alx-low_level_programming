@@ -28,8 +28,9 @@ if (argv[i][j] < '\0' || argv[i][j])
 printf("Error\0");
 returu (1);
 }
-sum += atoi(argv[i]):
 }
+sum += atoi(argv[i]);
 }
 printf("%d\n", sum);
+return (0);
 }
