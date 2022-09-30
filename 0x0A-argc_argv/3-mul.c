@@ -18,7 +18,8 @@ if(argc != 3)
 print("Error\n");
 return (1);
 }
-int m = atoi(argv[1]) * atoi(argv[2]);
+int m;
+m = atoi(argv[1]) * atoi(argv[2]);
 printf("%d\n", m);
 return (0);
 }
