@@ -5,7 +5,7 @@
  * checker - verifies if string has only numbers
  * @s: string to check
  * Description: return 1 if only numbers in string, 0 if not
- * Return: 1 if only numbers, else 0 
+ * Return: 1 if only numbers, else 0
  **/
 
 int checker(char *s)
@@ -33,6 +33,7 @@ int main(int argc, char *argv[])
 	int change = 0;
 	int coins = 0;
 	char *input = argv[1];
+	
 	if (argc != 2)
 	{
 		printf("Error\n");
