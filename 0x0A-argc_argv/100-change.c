@@ -1,41 +1,68 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - prints the minimum number of coins to make change
- * for an amount of money
- *
- * @argc: argument counter
- * @argv: argument vector
- *
- * Return: 1 if ERROR
- * 0 if no ERROR
- */
-int coins( int S[], int m, int n ) {
-   int i, j, x, y;
-   int table[n+1][m];
-   for (i=0; i<m; i++)
-      table[0][i] = 1;
-   for (i = 1; i < n+1; i++) {
-      for (j = 0; j < m; j++) {
-         x = (i-S[j] >= 0)? table[i - S[j]][j]: 0;
-         y = (j >= 1)? table[i][j-1]: 0;
-         table[i][j] = x + y;
-      }
-   }
-   return table[n][m-1];
+ * checker - verifies if string has only numbers
+ * @s: string to check
+ * Description: return 1 if only numbers in string, 0 if not
+ * Return: 1 if only numbers, else 0 
+ **/
+
+int checker(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (s[i] < '0' || s[i] > '9')
+			return (0);
+	}
+	return (1);
 }
+
+/**
+ * main - find least amount of coins needed for change
+ * @argc: number of parameters entered
+ * @argv: strings entered including file name
+ * Description: prints the minimum number of coins to make change
+ * Return: 0
+ **/
 
 int main(int argc, char *argv[])
 {
-int arr[] = {1, 2, 5, 10, 25};
-if (argc != 2)
-{
-printf("Error\n");
-return (1);
-}
-   int m = sizeof(arr)/sizeof(arr[0]);
-   int n = atoi(argv[1]);
-   printf("%d ", coins(arr, m, n));
-return (0);
+	int change, coins;
+	change = coins = 0;
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
+
+	change = atoi(argv[1]);
+
+	if (change >= 0 && checker(input) == 0)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	if (change < 0 && checker(&input[1]) == 0)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	if (change < 0)
+	{
+		change = 0;
+	}
+	coins = change / 25;
+	change = change % 25;
+	coins = coins + change / 10;
+	change = change % 10;
+	coins = coins + change / 5;
+	change = change % 5;
+	coins = coins + change / 2;
+	change = change % 2;
+	coins += change;
+	printf("%d\n", coins);
+	return (0);
 }
