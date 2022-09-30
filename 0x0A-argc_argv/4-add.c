@@ -23,9 +23,9 @@ for (i = 0; i < argc; i++)
 {
 for (j = 0; argv[i][j] != '\0'; j++)
 {
-if (argv[i][j] < '\0' || argv[i][j])
+if (argv[i][j] < '0' || argv[i][j] > '9')
 {
-printf("Error\0");
+printf("Error\n");
 returu (1);
 }
 }
