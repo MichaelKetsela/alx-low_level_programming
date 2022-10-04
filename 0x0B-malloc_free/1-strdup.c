@@ -12,16 +12,27 @@
 
 char *_strdup(char *str)
 {
-char *dup;
+	char *dup;
+	unsigned int i = 0;
+	unsigned int j = 0;
 
-if (str == NULL)
-return (NULL);
+	if (str == NULL)
+		return (NULL);
 
-dup = malloc(sizeof(char));
-if (dup == NULL)
-return (NULL);
+	while (str[i])
+		i++;
 
-dup = strdup(str);
-free (dup);
-return (dup);
+	ar = malloc(sizeof(char) * (i + 1));
+
+	if (dup == NULL)
+		return (NULL);
+
+	while (str[j])
+	{
+		dup[j] = str[j];
+		j++;
+	}
+
+	dup[j + 1] = 0;
+	return (dup);
 }
