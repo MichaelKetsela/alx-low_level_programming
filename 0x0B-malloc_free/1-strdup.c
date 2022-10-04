@@ -15,7 +15,7 @@ char *_strdup(char *str)
 char *dup;
 if (str == NULL)
 return (NULL);
-unsigned in i = strlen(str);
+unsigned int i = strlen(str);
 dup = malloc(sizeof(char) * i);
 
 if (dup == NULL)
