@@ -21,7 +21,6 @@ dup = malloc(sizeof(char) * i);
 
 if (dup == NULL)
 return (NULL);
-free(dup);
-
+dup[i] = 0;
 return (dup);
 }
