@@ -24,5 +24,4 @@ return (NULL);
 
 return (dup);
 
-free(dup);
 }
