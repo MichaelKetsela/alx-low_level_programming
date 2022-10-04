@@ -42,7 +42,7 @@ char *str_concat(char *s1, char *s2)
 		i++;
 	}
 
-	while (i <= concat)
+	while (i <= l3)
 	{
 		concat[i] = s2[j];
 		i++;
