@@ -20,10 +20,11 @@ return (NULL);
 
 dup = malloc(sizeof(char) * i + 1);
 
+dup =strdup(str);
+
 if (dup == NULL)
 return (NULL);
 
-dup =strdup(str);
 return (dup);
-
+free(dup);
 }
