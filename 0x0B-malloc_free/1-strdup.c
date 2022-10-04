@@ -24,5 +24,5 @@ return (NULL);
 dup = strdup(str);
 return (dup);
 
-free(ar);
+free(dup);
 }
