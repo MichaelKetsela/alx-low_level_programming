@@ -17,10 +17,12 @@ unsigned int i = strlen(str);
 if (str == NULL)
 return (NULL);
 
-dup = malloc(sizeof(char) * i);
+dup = malloc(sizeof(char) * i + 1);
 
 if (dup == NULL)
 return (NULL);
-dup[i] = 0;
+
 return (dup);
+
+free(dup);
 }
