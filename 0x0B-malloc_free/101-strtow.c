@@ -27,5 +27,5 @@ char **strtow(char *str)
 	}
 	
 
-	return (a);
+	return (sp);
 }
