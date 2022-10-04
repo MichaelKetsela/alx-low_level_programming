@@ -23,6 +23,6 @@ if (dup == NULL)
 return (NULL);
 
 dup = strdup(str);
-dup[i] = 0;
+free (dup);
 return (dup);
 }
