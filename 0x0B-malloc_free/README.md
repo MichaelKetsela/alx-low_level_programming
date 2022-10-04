@@ -1,4 +1,4 @@
-0x0A. C - malloc, free
+0x0B. C - malloc, free
 
 In this lesson we're learning about using malloc and free.
 
