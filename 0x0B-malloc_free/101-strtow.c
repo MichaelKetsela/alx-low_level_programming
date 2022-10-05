@@ -7,7 +7,7 @@
  * Return: pointer to an array of strings (Success)
  * or NULL (Error)
  */
-char **strtow(char *str)
+int **strtow(char *str)
 {
 	char *sp;
 	int w = 0;
@@ -27,5 +27,5 @@ char **strtow(char *str)
 	}
 	
 
-	return (sp);
+	return (0);
 }
