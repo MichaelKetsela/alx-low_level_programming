@@ -36,6 +36,8 @@ char *new;
 	new = malloc(sizeof(char) * (l + 1));
 	if (new == NULL)
 		return (NULL);
+	
+	l = 0;
 
 	for (p = 0; p < i; p++)
 		new[k++] = s1[p];
