@@ -12,7 +12,4 @@ char *name;
 float *age;
 char *owner;
 };
-/**
- * typedef dogs - assign alternative new names for struct dog 
- */
 #endif
