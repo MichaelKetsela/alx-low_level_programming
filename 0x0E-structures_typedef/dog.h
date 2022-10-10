@@ -1,3 +1,5 @@
+#ifndef DOG
+#define DOG
 /**
  * dog - a strcture
  * @name: a string
@@ -10,3 +12,8 @@ char *name;
 float *age;
 char *owner;
 };
+/**
+ * typedef dogs - assign alternative new names for struct dog 
+ */
+typedef struct dog dogs;
+#endif
