@@ -15,6 +15,6 @@ char *owner;
 /**
  * typedef dogs - assign alternative new names for struct dog 
  */
-typedef struct dog dog_s;
+typedef struct dog dog_t;
 int _putchar(char c);
 #endif
