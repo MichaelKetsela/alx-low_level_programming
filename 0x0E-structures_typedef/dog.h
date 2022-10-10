@@ -1,6 +1,6 @@
 #ifndef DOG
 #define DOG
-
+#include <stdlib.h>
 /**
  * struct dog - a strcture
  * @name: a string
