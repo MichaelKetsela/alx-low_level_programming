@@ -5,7 +5,7 @@
  * @name: a string
  * @age: an int
  * @owner: a string
- *
+ */
 struct dog
 {
 char *name;
@@ -15,5 +15,4 @@ char *owner;
 /**
  * typedef dogs - assign alternative new names for struct dog 
  */
-typedef struct dog dogs;
 #endif
