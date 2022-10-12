@@ -18,8 +18,10 @@ if (array == NULL || size <= 0 || cmp == NULL)
 if (array && size && cmp)
 while (i < size)
 {
-cmp(array[i]);
+if (cmp(array[i]))
+  return (i);
 i++;
 }
-return (i);
+
+return (-1);
 }
