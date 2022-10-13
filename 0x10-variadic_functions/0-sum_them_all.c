@@ -11,7 +11,7 @@ unsigned int i, sum = 0;
 if (n == 0)
   return(0);
 va_start(ap, n);
-for(i = n; i >= 0; i = va_arg(ap, unsigned int))
+for(i = 0; i >= n; i++)
 { 
   sum += va_arg(ap, unsigned int);
 }
