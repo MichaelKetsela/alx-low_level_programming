@@ -2,32 +2,7 @@ Task 0
 Write a function that returns the sum of all its parameters.  
 * Prototype: int sum_them_all(const unsigned int n, ...);
 * If n == 0, return 0
-...
-julien@ubuntu:~/0x0f. variadic functions$ cat 0-main.c
-#include <stdio.h>
-#include "variadic_functions.h"
 
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    int sum;
-
-    sum = sum_them_all(2, 98, 1024);
-    printf("%d\n", sum);
-    sum = sum_them_all(4, 98, 1024, 402, -1024);
-    printf("%d\n", sum);    
-    return (0);
-}
-julien@ubuntu:~/0x0f. variadic functions$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-sum_them_all.c -o a
-julien@ubuntu:~/0x0f. variadic functions$ ./a 
-1122
-500
-julien@ubuntu:~/0x0f. variadic functions$ 
-...
 Task 1  
 Write a function that prints numbers, followed by a new line.  
 * Prototype: void print_numbers(const char *separator, const unsigned int n, ...);
@@ -36,6 +11,7 @@ Write a function that prints numbers, followed by a new line.
 * You are allowed to use printf
 * If separator is NULL, don’t print it
 * Print a new line at the end of your function
+
 Task 2  
 Write a function that prints strings, followed by a new line.  
 * Prototype: void print_strings(const char *separator, const unsigned int n, ...);
@@ -45,6 +21,7 @@ Write a function that prints strings, followed by a new line.
 * If separator is NULL, don’t print it
 * If one of the string is NULL, print (nil) instead
 * Print a new line at the end of your function
+
 Task 3  
 Write a function that prints anything.  
 * Prototype: void print_all(const char * const format, ...);
