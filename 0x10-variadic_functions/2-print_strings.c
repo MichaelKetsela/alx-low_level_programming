@@ -16,13 +16,12 @@ for (i = 0; i < n; i++)
 {
 if (va_arg(ch, char*) != NULL)
 printf("%s", va_arg(ch, char*));
-
 else
 printf("(nil)");
 
 if (i < n - 1 && separator != NULL)
 printf("%s", separator);
 }
-putchar('\n');
 va_end(ch);
+putchar('\n');
 }
