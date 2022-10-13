@@ -12,18 +12,18 @@ va_list ch;
 unsigned int i;
 char *a;
 
-va_start(ch , n);
+va_start(ch, n);
 
 for (i = 0; i < n; i++)
 {
-    a = (va_arg(ch, char *));
-    if (a != NULL)
-        printf("%s", a);
-    else
-        printf("(nil)");
+a = (va_arg(ch, char *));
+if (a != NULL)
+printf("%s", a);
+else
+printf("(nil)");
 
-    if (i < n - 1 && separator != NULL)
-        printf("%s", separator);
+if (i < n - 1 && separator != NULL)
+printf("%s", separator);
 }
 va_end(ch);
 putchar('\n');
