@@ -14,13 +14,15 @@ unsigned int i;
 va_start(ch , n);
 for (i = 0; i < n; i++)
 {
-if (av_arg(ch, char*) == NULL)
-  printf("nil");
+if (va_arg(ch, char*) == NULL)
+printf("(nil)");
+
 else
-printf("%s", av_arg(ch, char*));
+printf("%s", va_arg(ch, char*));
+
 if (i < n - 1 && separator != NULL)
 printf("%s", separator);
 }
 putchar('\n');
-av_end(ch);
+va_end(ch);
 }
