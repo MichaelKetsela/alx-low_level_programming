@@ -11,9 +11,9 @@ unsigned int i, sum = 0;
 if (n == 0)
   return(0);
 va_start(ap, n);
-for(i = n; i >= 0; i = va_arg(ap, n))
+for(i = n; i >= 0; i = va_arg(ap, unsigned int))
 { 
-  sum += va_arg(ap, n);
+  sum += va_arg(ap, unsigned int);
 }
 va_end(ap);
 return (sum);
