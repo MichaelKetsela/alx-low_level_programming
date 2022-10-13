@@ -18,7 +18,7 @@ op_t ops[] = {
     while (i < 5)
     {
     if (ops[i].op[0] == s[0])
-      retrun (ops[i].f);
+      return (ops[i].f);
     i++;
     }
     return (NULL);
