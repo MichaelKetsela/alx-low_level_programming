@@ -15,8 +15,8 @@ va_start (sep, n);
 for(i = 0; i < n; i++)
 {
   printf("%d", va_arg(sep , int));
-  if (i < n -1)
-    printf("%s", separator)
+  if (separator != NULL && i < n -1)
+    printf("%s", separator);
 }
 va_end(sep);
 putchar('\n');
