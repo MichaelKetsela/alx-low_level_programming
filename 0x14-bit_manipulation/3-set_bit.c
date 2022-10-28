@@ -15,7 +15,7 @@ unsigned long int *num;
 if (index > 63)
   return (-1);
 
-num = ((1 << index) | n);
+num = ((1UL << index) | *n);
 printf("%d", num);
 return(1);
 }
