@@ -7,7 +7,21 @@
 
 void print_binary(unsigned long int n)
 {
-unsigned long int i;
-for (i = 1 << 63; i > 0; i = i / 2)
-(n & i) ? printf("1") : printf("0");
+	int i, count = 0;
+	unsigned long int current;
+
+	for (i = 63; i >= 0; i--)
+	{
+		current = n >> i;
+
+		if (current & 1)
+		{
+			putchar('1');
+			count++;
+		}
+		else if (count)
+			putchar('0');
+	}
+	if (!count)
+		putchar('0');
 }
