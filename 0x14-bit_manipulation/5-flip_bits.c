@@ -16,8 +16,8 @@ int i, c = 0;
 num = n ^ m;
 for (i = 63; i >= 0 ; i--)
 {
-if((num >> i) & 1)
-  c++;
+if ((num >> i) & 1)
+c++;
 }
 return (c);
 }
