@@ -14,7 +14,7 @@ int bit;
 unsigned int s = sizeof(n) * 8 - 1;
 
 if (index > s)
-  return (-1);
+return (-1);
 
 bit = (n >> index) & 1;
 
