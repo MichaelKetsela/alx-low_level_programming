@@ -2,7 +2,7 @@
 """Define an island perimeter measuring function."""
 
 
-def island_permeter(grit):
+def island_permeter(grid):
     """retruns the perimeter of the island described in grid"""
     w = len(grid[0])
     h = len(grid)
